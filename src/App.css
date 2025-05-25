@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+/* App.css */
+
+.fade-in {
+  animation: fadeIn 1s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px);}
+  to { opacity: 1; transform: translateY(0);}
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.slide-in {
+  animation: slideIn 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-40px);}
+  to { opacity: 1; transform: translateX(0);}
 }
 
-.App-link {
-  color: #61dafb;
+.fade-out {
+  animation: fadeOut 0.5s forwards;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@keyframes fadeOut {
+  to { opacity: 0; height: 0; margin: 0; padding: 0;}
+}
+
+.transition-bg {
+  transition: background-color 0.5s, color 0.5s;
 }
