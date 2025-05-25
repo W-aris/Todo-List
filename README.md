@@ -66,12 +66,12 @@ The build is minified and the filenames include the hashes.
 
 ---
 
-## Screenshots
+<!-- ## Screenshots
 
 ![Light Mode Screenshot](./screenshots/light-mode.png)
 ![Dark Mode Screenshot](./screenshots/dark-mode.png)
 
----
+--- -->
 
 ## License
 
